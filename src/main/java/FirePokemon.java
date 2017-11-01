@@ -56,9 +56,7 @@ public class FirePokemon extends Pokemon {
                 && this.specialtyProbability > Math.random()) {
             System.out.println(this.specialtyAttack);
             opponent.setHitPoints(0);
-            if (opponent.getHitPoints() < 1) {
-                return true;
-            }
+            return true;
         }
         return false;
     }
